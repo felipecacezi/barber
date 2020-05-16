@@ -1,0 +1,138 @@
+* {
+    margin  : 0;
+    padding : 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    width       : 100vw;
+    font-family : 'Roboto', sans-serif;   
+    font-size   : 10px; 
+}
+
+.Container-Menu {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    height          : 100vh;
+}
+
+.Menu {
+    list-style       : none;
+    display          : flex;    
+    align-items      : center;
+    justify-content  : space-around;
+    background-color : #403944;
+    position         : fixed;
+    width            : 100vw;
+    top              : 0;
+}
+
+.Menu li {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-around;   
+    width           : 23vw;
+}
+
+.Menu li a {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-around;    
+    text-decoration : none;
+    color           : white;    
+    height          : 8vh;
+    font-size       : 1em;
+    width           : 100vw;
+}
+
+.Menu li a:hover {
+    text-decoration     : none;
+    color               : #403944;
+    background-color    : whitesmoke;
+    font-weight         : bold;
+    transition          : 1s;
+}
+
+.img-site {    
+    width : 100vw;
+}
+
+.img-site img{
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 100vw;
+}
+
+
+@media(min-width: 400px){
+
+    .Menu li a {        
+        font-size : 2em;        
+    }
+    
+    .img-site img{        
+        width: 100vw;
+    }
+}
+
+
+@media(min-width: 600px){
+
+    .Menu li a {        
+        font-size : 2em;        
+    }
+
+    .img-site {    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width : 100vw;
+    }
+
+    .img-site img{        
+        width: 80vw;
+    }
+    
+}
+
+@media(min-width: 700px){
+
+   .Menu {
+        justify-content: center;
+   }
+    
+}
+
+@media(min-width: 1000px){
+
+    .img-site img{        
+        width: 100em;
+    }
+
+    .img-site {    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width : 100em;
+    }
+    
+}
+
+
+@media(min-width: 2000px){
+
+    .img-site img{        
+        width: 70em;
+    }
+
+    .img-site {    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width : 70em;
+    }
+    
+}
